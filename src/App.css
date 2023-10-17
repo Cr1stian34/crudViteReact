@@ -1,0 +1,118 @@
+.formContainer {
+    /* border: 3px solid green; */
+    width: 50%;
+    padding: 2rem;
+    border-radius: 20px;
+    background: linear-gradient(93deg, #16A4B7 12.16%, #93408C 52.6%, #7142F5 89.8%);
+    box-shadow: 7px 0px 23px 0px rgba(0, 0, 0, 0.25), -3px 4px 3px 0px rgba(255, 255, 255, 0.25) inset;
+}
+
+.container1 {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-auto-rows: 5rem;
+    gap: 1rem;
+}
+
+.container2 {
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-auto-rows: 5rem;
+    gap: 1rem;
+}
+
+input {
+    text-align: center;
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.btn_Modal {
+    /* border: 2px solid black; */  
+    padding: .5rem;
+    border-radius: 20px;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+}
+
+.btnCreateUser {
+    position: fixed;
+    /* border: 2px solid green; */
+    bottom: 40px;
+    right: 40px;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: #5465FF;
+    color: #fff;
+}
+
+.user {
+    /* border: 2px solid green; */
+    max-width: 80vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min-content, 200px));
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-auto-rows: auto;
+    place-items: center;
+    gap: 30px;
+    padding: 2rem;
+}
+
+.userData {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    border: 1px solid #E5E5E5;
+    background: rgba(255, 255, 255, 0.50);
+}
+
+.userIcon {
+    max-width: 150px;
+}
+
+.btnEdit {
+    background-color: #5465FF;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.btnDelete {
+    background-color: #EA2779;
+    color: #fff;
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.iconUser{
+    color: #5465FF;
+}
+
+.containerVacio{
+    /* border: 3px solid green; */
+    width: 100%;
+    height: calc(100vh - 5rem);
+    color: #7B7B7B;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 618px){
+    .userIcon{
+        display: flex;
+    }
+
+    .formContainer{
+        position: absolute;
+        width: 100%;
+    }
+}
